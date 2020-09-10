@@ -6,7 +6,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.*"%>
 <%@ page import="next.model.*"%>
-<%--
 
 <%
   Collection<User> users = (Collection<User>)request.getAttribute("users);
@@ -21,4 +20,4 @@
 </tr>
 <%
   }
-%>--%>
+%>
