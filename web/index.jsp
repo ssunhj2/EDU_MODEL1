@@ -1,22 +1,20 @@
 <%--
-  두 수의 합을 구하고 출력한다.
   User: sun
-  Date: 2020/09/08
+  Date: 2020/09/10
   Time: 10:52 PM
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-  <title>두 수의 합</title>
-</head>
-<body>
+<%@ page import="java.util.*"%>
+<%@ page import="next.model.*"%>
+
 <%
-  int num1 = 20;
-  int num2 = 10;
-  int add = num1 + num2;
+  Collection<User> users = (Collection<User>) request.getAttribute("users");
+  for(User user : users) {
 %>
+<tr>
+  <td><%= user.getUserId()%></td>
+  <td><%= user.getName()%></td>
+  <td><%= user.getEmail()%></td>
+  <td><a href="#" class="btn btn-success" role="button">수</a> </td>
 
-<%=num1%> + <%=num2%> = <%=add%>
-
-</body>
-</html>
+</tr>
