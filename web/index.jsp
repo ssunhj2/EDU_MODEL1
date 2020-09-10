@@ -18,3 +18,6 @@
   <td><a href="#" class="btn btn-success" role="button">수</a> </td>
 
 </tr>
+<%
+  }
+%>
